@@ -1,10 +1,384 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjan Kumar Sahu - Oceanographer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #2a5298;
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+        
+        .profile-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        
+        .organization {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .description {
+            margin-top: 8px;
+            padding-left: 20px;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .languages, .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .publication {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+            font-style: italic;
+        }
+        
+        .conference-list, .workshop-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .conference-list li, .workshop-list li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .conference-list li:before, .workshop-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 12px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is hosted on GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <h1>Ranjan Kumar Sahu</h1>
+            <p>Oceanographer & Atmospheric Scientist</p>
+        </header>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:ranzan.ocean@gmail.com">ranzan.ocean@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>+91 917 856 186 32</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <a href="https://github.com/ranzan998" target="_blank">github.com/ranzan998</a>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>NIO Colony, Dona Paula, Goa, India</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <section>
+                <h2>Profile</h2>
+                <p class="profile-text">
+                    Innovative, curious and passionate oceanographer with over 5 years of experience in the field of oceanography and atmospheric sciences. Having a good command of theory, a fair background in data analysis techniques, and a keen interest in numerical models. Proficient in Python programming, I have exploited its flexible capabilities in analyzing the large volumes of ocean and atmospheric data.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <strong>Programming:</strong> Python, Matlab, Fortran, Ferret
+                    </div>
+                    <div class="skill-item">
+                        <strong>Tools:</strong> LATEX 2ε, Technical Writing
+                    </div>
+                    <div class="skill-item">
+                        <strong>Expertise:</strong> Data Analysis, ADCP Processing
+                    </div>
+                    <div class="skill-item">
+                        <strong>Soft Skills:</strong> Communication, Research
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Experience</h2>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Senior Research Fellow</h3>
+                    <p class="organization">CSIR-National Institute of Oceanography, Goa, India</p>
+                    <p class="date">September 2022 - Present</p>
+                    <div class="description">
+                        • ADCP backscatter data analysis<br>
+                        • Boundary currents study<br>
+                        • Automation of bulk ADCP data processing
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Junior Research Fellow</h3>
+                    <p class="organization">CSIR-National Institute of Oceanography, Goa, India</p>
+                    <p class="date">August 2020 - August 2022</p>
+                    <div class="description">
+                        • Analysed RCM, AWS and tide gauge data<br>
+                        • Studied sea level and currents of Indo-Sri Lanka Channel
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Research Intern</h3>
+                    <p class="organization">Indian National Centre for Ocean Information Services, India</p>
+                    <p class="date">May 2019 - August 2019</p>
+                    <div class="description">
+                        • Interannual variability of circulation in Bay of Bengal
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Intern</h3>
+                    <p class="organization">IIT Bhubaneswar, India</p>
+                    <p class="date">November 2018 - December 2018</p>
+                    <div class="description">
+                        • Used HF radar to study EICC
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <h3>Master in Ocean and Atmospheric Sciences</h3>
+                    <p class="date">2018 - 2020</p>
+                    <div class="description">
+                        • Mathematical physics, Ocean and Atmospheric Physics and dynamics<br>
+                        • Numerical methods and modelling, Ocean Biogeochemistry<br>
+                        • Thesis: An Investigation into Intraseasonal Oscillation
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Bachelor of Science in Physics</h3>
+                    <p class="organization">Vikramdeb Autonomous College, Berhampur University</p>
+                    <p class="date">2015 - 2018</p>
+                    <div class="description">
+                        • Thermodynamics, Solid State Physics, Electrodynamics<br>
+                        • Mathematical Physics, Quantum Mechanics
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Additional Education</h3>
+                    <p><strong>The Joy of Computing with Python</strong> - NPTEL (2021)</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Publication</h2>
+                <div class="publication">
+                    Observed sea level and currents in the Indo-Sri Lanka channel: Seasonal transport, tidal characteristics, and the role of remote forcing
+                </div>
+            </section>
+            
+            <section>
+                <h2>Conferences</h2>
+                <ul class="conference-list">
+                    <li>OSICON-25, CSIR-NIO, India (2025)</li>
+                    <li>COSMOS-24, NPOL, DRDO, India (2024)</li>
+                    <li>WOSC-24, NIOT, IIT Madras Research Park, India (2024)</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Workshops</h2>
+                <ul class="workshop-list">
+                    <li>PyADPS, INCOIS, India (2025)</li>
+                    <li>IoPredict-24, INCOIS, India (2024)</li>
+                    <li>Data Science Training Program, CSIR-4Pi, India (2023)</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Languages</h2>
+                <div class="languages">
+                    <span class="tag">Odia (Native)</span>
+                    <span class="tag">English (C2)</span>
+                    <span class="tag">Hindi (C1)</span>
+                    <span class="tag">Desiya (C1)</span>
+                    <span class="tag">Bengali (A1)</span>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Hobbies & Interests</h2>
+                <div class="hobbies">
+                    <span class="tag">Classical Guitar</span>
+                    <span class="tag">Badminton</span>
+                    <span class="tag">Football</span>
+                    <span class="tag">Linguistics</span>
+                    <span class="tag">History</span>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Ranjan Kumar Sahu. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
